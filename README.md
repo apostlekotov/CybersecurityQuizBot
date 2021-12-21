@@ -1,9 +1,9 @@
-# The Mafia Helper Bot
+# Cybersecurity Quiz Bot
 
 [![Supported python versions](https://img.shields.io/pypi/pyversions/aiogram.svg?style=flat-square)](https://pypi.python.org/pypi/aiogram)
 [![Telegram Bot API](https://img.shields.io/badge/Telegram%20Bot%20API-5.0-blue.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
 
-> Telegram Bot to accompany the game mafia powered by [AIOGram](https://github.com/aiogram/aiogram).
+> Telegram Bot to test cybersecurity knowlage powered by [AIOGram](https://github.com/aiogram/aiogram).
 
 ## Set up
 
