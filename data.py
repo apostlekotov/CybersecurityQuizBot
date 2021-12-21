@@ -1,12 +1,12 @@
 msgs = {
-  "welcome": "welcome",
-  "start": "start",
-  "begin": "begin",
-  "finish": "finish",
-  "wrong": "wrong",
-  "right": "right",
-  "is_ready": "is_ready?",
-  "error": "error"
+  "welcome": "Друже! Вітаємо тебе в нашому боті.\nНижче розміщене посилання на матеріали, які допоможуть покращити твої знання з кібербезпеки. Але чи добре ти засвоїш ці правила? Чи завжди їх дотримуєшься?\nЩоб відповісти на це запитання, ми пропонуємо тобі виконати наші тести. Перший перевірить твої знання, другий — визначить твій рівень кіберзахисту.\nБажаємо успіхів та приємного користування!\n\nhttps://buklib.net/books/28625/\n\nhttps://niss.gov.ua/doslidzhennya/nacionalna-bezpeka/bezpekova-politika-ukraini-v-konteksti-formuvannya-sistemi\n\nhttps://buduysvoe.com/publications/ryzyk-menedzhment-i-ocinka-ryzykiv-na-storozhi-zahystu-vashogo-biznesu\n\nhttps://wiki.hostpro.ua/ua/knowledgebase/shifruvannja-tipi-i-algoritmi/\n\nhttps://10guards.com/ua/articles/the-most-common-types-of-cyber-attacks-in-2021/",
+  "start": "Ну що ж, почнімо. Успіхів!",
+  "begin": "Починаємо тест",
+  "finish": "Вітаємо! Твій результат:",
+  "wrong": "✖️",
+  "right": "✔️",
+  "is_ready": "Готовий?",
+  "error": "На жаль, сталась помилка, спробуйте ще раз"
 }
 
 name1_questions = [
