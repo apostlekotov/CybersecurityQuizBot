@@ -24,13 +24,14 @@ dp = Dispatcher(bot)
 global_state = {}
 
 # Actions
-
-
 @dp.message_handler(commands=['start'])
 async def start(msg: Message):
   await msg.answer(msgs['welcome'])
   await msg.answer(msgs['start'], reply_markup=get_test_list_markup())
 
+@dp.message_handler(commands=['help'])
+async def help(msg: Message):
+  await msg.answer(msgs['help'], parse_mode=ParseMode.MARKDOWN_V2)
 
 @dp.message_handler(content_types=ContentType.ANY)
 async def default_reply(msg: Message):
@@ -83,8 +84,6 @@ async def answer_question(msg: Message, option):
   await question_player(msg, global_state[cid])
 
 # Handlers
-
-
 @dp.callback_query_handler()
 async def btn_handler(query: CallbackQuery):
   cid = query.message.chat.id
