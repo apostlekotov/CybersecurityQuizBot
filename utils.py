@@ -47,7 +47,7 @@ async def ask_question(msg: Message, state):
 
   alphabet = list(string.ascii_uppercase)
 
-  question_msg = f"*№{state['current_question'] + 1} {question['content']}*\n"
+  question_msg = f"*№{state['current_question'] + 1} {question['content']}*\n\n"
 
   options_markup = InlineKeyboardMarkup()
 
@@ -65,4 +65,4 @@ async def ask_question(msg: Message, state):
 
 
 async def print_result(msg: Message, state):
-  await msg.answer(f"{msgs['finish']}\n{state['score']}/{len(get_test_questions(state['test_name']))}")
+  await msg.answer(f"{msgs['finish']} {state['score']}/{len(get_test_questions(state['test_name']))} 🎉")

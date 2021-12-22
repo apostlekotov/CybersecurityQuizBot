@@ -56,7 +56,7 @@ async def answer_question(msg: Message, option):
 
   alphabet = list(string.ascii_uppercase)
 
-  question_msg = f"*№{state['current_question'] + 1} {question['content']}*\n"
+  question_msg = f"*№{state['current_question'] + 1} {question['content']}*\n\n"
 
   for i, question_option in enumerate(question['options']):
     if alphabet[i] == option[1]:
@@ -74,7 +74,7 @@ async def answer_question(msg: Message, option):
   if state['current_question'] == len(get_test_questions(state['test_name'])):
     del global_state[cid]
     await print_result(msg, state)
-    await msg.answer(msgs['start'], reply_markup=get_test_list_markup())
+    await msg.answer(msgs['select'], reply_markup=get_test_list_markup())
     return
 
   global_state[cid] = state
